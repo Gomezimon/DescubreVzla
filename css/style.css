@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Asul:wght@700&family=Lato:wght@400;700;900&display=swap');
 * {font-family: "Lato", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     font-style: normal;
 }
@@ -9,8 +9,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+p {
+    line-height: 1.6;
+}
 .introText {
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 30px;
     margin-right: 20px;
     margin-top: 50px;
@@ -24,6 +27,7 @@ footer {
     color: white;
     text-align: right;
     padding-top: 100px;
+    list-style: none;
 }
 .footerStyle ul{
     display: flex;
@@ -33,32 +37,76 @@ footer {
     background-color: rgba(0, 0, 0, 0.301);
     gap: 20px;
     list-style: none;
-    margin-right: 85px;
+    text-decoration: none;
+    padding-right: 80px;
+
 }
-.footerStyle li{
+.footerStyle ul li{
     font-weight: 700;
+    list-style: none;
+    text-decoration: none;
 }
-h1 {
-    text-shadow: 8px 4px 8px rgba(0, 0, 0, 0.589);
+.instagramLogo{
+    width: 30px;
+    height: 30px;
 }
-h1, h2 {
+.facebookLogo {
+    width: 30px;
+    height: 30px;
+}
+h2 { /*estilo de fuentes en los h2 de los articulos*/
     font-family: "Lato", sans-serif;
-    font-size: x-large;
+    font-size: 25px;
     font-weight: 900;
     font-style: normal;
-    text-align: center;
-    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 } 
 
 .gridContainer{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual ancho */
+    grid-template-columns: repeat(2, 650px); /* 2 columnas de igual ancho */
     grid-gap: 30px; /* Espacio entre las celdas de la cuadrícula */
-    padding: 10px;
+    padding: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
+.gridContainerCanaima{
+    display: grid;
+    grid-template-columns: repeat(2, 650px);
+    grid-gap: 30px; 
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.gridContainerMorrocoy {
+    display: grid;
+    grid-template-columns: repeat(2, 650px);
+    grid-gap: 30px; 
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.gridContainerRoques {
+    display: grid;
+    grid-template-columns: repeat(2, 650px);
+    grid-gap: 30px; 
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.gridItem {
+    font-size: 18px;
+}
+.gridItemCanaima {
+    font-size: 18px;
+}
+.gridItemMorrocoy {
+    font-size: 18px;
+}
+.gridItemRoques {
+    font-size: 18px;
+}
 .menu { /*header*/
     display: flex;
     justify-content: space-between;
@@ -74,7 +122,8 @@ h1, h2 {
     width: 100px;
 }
 .menu ul {
-    background-color: rgba(0, 0, 0, 0.123);
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 10px 0 0 10px;
     list-style: none;
     display: flex;
     margin-top: 10px;
@@ -108,19 +157,6 @@ h1, h2 {
     width: 600px;
     object-fit: contain;
 }
-.gridItem {
-    font-size: 18px;
-    margin-left: 30px;
-
-}
-.instagramLogo{
-    width: 30px;
-    height: 30px;
-}
-.facebookLogo {
-    width: 30px;
-    height: 30px;
-}
 .pMerida1{
     display: flex;
     flex-direction: row;
@@ -143,12 +179,13 @@ h1, h2 {
     justify-content: center;
     border-radius: 80px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 .titulo {
     height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /*Error, no se esta centrando*/ /*habia que declarar el height*/
+    justify-content: flex-end; /*Error, no se esta centrando*/ /*habia que declarar el height*/
     align-items: flex-start;
     
 }
@@ -157,22 +194,124 @@ h1, h2 {
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-    color: black;
+    color: white;
     padding-bottom: 0;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.589);
+
 }
 .mainTitle {
     font-family: "Asul", serif;
     font-weight: 700;
     font-style: normal;
     font-size: 65px;
-    color: black;
+    color: white;
     padding-top: 0;
     margin-left: 30px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.589);
+
 }
 .tituloRoques {
     height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /*Error, no se esta centrando*/ /*habia que declarar el height*/
+    justify-content: center; /
     align-items: flex-end;
+}
+
+@media (max-width: 768px){
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px 0 30px;
+        padding: 0;
+    }
+    .gridContainerCanaima {
+        display: flex;
+        flex-direction: column;
+    }
+    .gridContainerMorrocoy {
+        display: flex;
+        flex-direction: column;
+    }
+    .gridContainerRoques {
+        display: flex;
+        flex-direction: column;
+    }
+    .gridItem {
+        display: grid;
+        grid-template-columns: repeat(2, 327px);
+        grid-template-rows: 30px 100% ;
+        align-items: end;
+        row-gap: 10px ;
+        column-gap: 30px;
+        padding: 0;
+        grid-template-areas: 
+        "h2Articule imgArticule"
+        "pArticule imgArticule"
+        ;
+    }
+    .gridItem img {
+        max-width: 325px;
+    }
+    .imagenCentrada{
+        width: 684px;
+    }
+    .h2Articule {
+        grid-area: h2Articule;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 30px;
+    }
+    .imgArticule {
+        grid-area: imgArticule;
+    }
+    .pArticule {
+        grid-area: pArticule;
+    }
+    header {
+        height: 768px;
+    }
+    .Logo {
+        padding-right: 100px;
+    }
+    .descubre {
+        font-family: "Arizonia", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 60px;
+        padding-bottom: 0;
+    }
+    .mainTitle {
+        font-family: "Asul", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 65px;
+        padding-top: 0;
+        margin-left: 0;
+}
+.tituloRoques{
+    margin-right: 15px;
+}
+.imgArticuleRight {
+    display: flex;
+    align-items: center;
+    width: 680px;
+    object-fit: contain;
+}
+.iframeYT {
+    width: 684px;
+    height: 456px;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+}
+.pMerida1{
+    flex-direction: column;
+    align-items: center;
+}
+.introText{
+    font-size: 18px;
+}
+    
 }
