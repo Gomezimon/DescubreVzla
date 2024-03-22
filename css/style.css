@@ -14,12 +14,12 @@ p {
 }
 .introText {
     font-size: 20px;
-    margin-left: 30px;
-    margin-right: 20px;
+    margin-left: 84px;
+    margin-right: 84px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-footer {
+.footerStyle {
     background-image: url(../assets/img/footerImagePicoBolivar.png);
     background-size: cover;
     background-position: left;
@@ -36,15 +36,24 @@ footer {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.301);
     gap: 20px;
-    list-style: none;
-    text-decoration: none;
     padding-right: 80px;
-
 }
-.footerStyle ul li{
-    font-weight: 700;
-    list-style: none;
+
+.footerStyle ul li a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+}
+.footerStyle ul li {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+}
+.footerStyle ul li :hover {
+    font-size: 20px;
+    font-weight: 700;
 }
 .instagramLogo{
     width: 30px;
@@ -65,19 +74,21 @@ h2 { /*estilo de fuentes en los h2 de los articulos*/
 
 .gridContainer{
     display: grid;
-    grid-template-columns: repeat(2, 650px); /* 2 columnas de igual ancho */
-    grid-gap: 30px; /* Espacio entre las celdas de la cuadrícula */
-    padding: 30px;
+    grid-template-columns: repeat(2, 570px); /* 2 columnas de igual ancho */
+    grid-gap: 120px; /* Espacio entre las celdas de la cuadrícula */
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 .gridContainerCanaima{
     display: grid;
-    grid-template-columns: repeat(2, 650px);
-    grid-gap: 30px; 
-    padding: 30px;
+    grid-template-columns: 569px 578px;
+    grid-gap: 100px; 
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-right: 84px;
+    margin-left: 84px;
 }
 .gridContainerMorrocoy {
     display: grid;
@@ -97,6 +108,12 @@ h2 { /*estilo de fuentes en los h2 de los articulos*/
 }
 .gridItem {
     font-size: 18px;
+}
+.h2Articule{
+    margin-left: 30px;
+}
+.pArticule {
+    margin-left: 30px;
 }
 .gridItemCanaima {
     font-size: 18px;
@@ -139,16 +156,14 @@ h2 { /*estilo de fuentes en los h2 de los articulos*/
     font-size: 18px;
 }
 .menu ul li :hover {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
-
 }
 
 .imagenCentrada{
-    display: block; /*display block y margin 0 auto para centrar automaticamente el contenedor de la imagen*/
+    display: block;
     margin: 0 auto;
-    margin-left: 30px;
-    width: 1280px;
+    width: 1200px;
     object-fit: contain; /*con object fit: contain podemos mantener la proporcion de la imagen mientras
     la agrandamos con width*/
     margin-bottom: 30px;
@@ -214,7 +229,7 @@ h2 { /*estilo de fuentes en los h2 de los articulos*/
     height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /
+    justify-content: center;
     align-items: flex-end;
 }
 
