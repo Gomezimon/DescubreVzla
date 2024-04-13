@@ -28,10 +28,10 @@ p {
 .footerStyle {
   background-image: url(../assets/img/footerImagePicoBolivar.png);
   background-size: cover;
-  background-position: left;
+  background-position: center;
   color: white;
   text-align: right;
-  padding-top: 100px;
+  padding-top: 150px;
   list-style: none;
 }
 
@@ -83,6 +83,7 @@ h2 { /*estilo de fuentes en los h2 de los articulos*/
 
 .gridContainer {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(2, 44%); /* 2 columnas de igual ancho */
   grid-gap: 100px; /* Espacio entre las celdas de la cuadrícula */
   margin-top: 30px;
@@ -154,43 +155,14 @@ h2 { /*estilo de fuentes en los h2 de los articulos*/
   font-size: 18px;
 }
 
-.menu { /*header*/
+.nav-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
+  justify-content: flex-end;
 }
 
 .Logo {
   margin: 0;
-}
-
-.Logo img {
-  width: 100px;
-}
-
-.menu ul {
-  background-color: rgba(0, 0, 0, 0.37);
-  border-radius: 10px 0 0 10px;
-  list-style: none;
-  display: flex;
-  margin-top: 10px;
-  padding: 0;
-}
-
-.menu ul li {
-  margin: 10px;
-}
-
-.menu ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.menu ul li :hover {
-  font-size: 20px;
-  font-weight: 700;
+  width: 80px;
 }
 
 .imagenCentrada {
@@ -201,6 +173,7 @@ h2 { /*estilo de fuentes en los h2 de los articulos*/
 la agrandamos con width*/
   margin-bottom: 80px;
   border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
 }
 
 .imgArticuleRight {
@@ -232,20 +205,21 @@ la agrandamos con width*/
   width: 600px;
 }
 
-.iframeYT {
+iframe {
   display: block;
   margin: 0 auto;
-  width: 1200px;
-  border-radius: 80px;
+  width: 90%;
+  height: 600px;
+  border-radius: 50px;
   overflow: hidden;
   margin-bottom: 30px;
 }
 
 .titulo {
-  height: 500px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /*Error, no se esta centrando*/ /*habia que declarar el height*/
+  justify-content: center; /*Error, no se esta centrando*/ /*habia que declarar el height*/
   align-items: flex-start;
 }
 
@@ -278,6 +252,14 @@ la agrandamos con width*/
   align-items: flex-end;
 }
 
+@media (max-width: 1024px) {
+  .gridContainer {
+    grid-gap: 50px;
+  }
+  .titulo {
+    justify-content: flex-end;
+  }
+}
 @media (max-width: 768px) {
   .introText {
     margin-left: 50px;
@@ -302,10 +284,13 @@ la agrandamos con width*/
   .gridContainerMorrocoy {
     display: flex;
     flex-direction: column;
+    gap: 30px;
   }
   .gridContainerRoques {
     display: flex;
     flex-direction: column;
+    margin: 0 30px 0 30px;
+    gap: 30px;
   }
   .gridItem {
     display: grid;
@@ -317,8 +302,9 @@ la agrandamos con width*/
     padding: 0;
     grid-template-areas: "h2Articule imgArticule" "pArticule imgArticule";
   }
-  .gridItem img {
+  .gridItem .imgArticule {
     max-width: 325px;
+    padding-bottom: 25px;
   }
   .imagenCentrada {
     width: 684px;
@@ -340,7 +326,8 @@ la agrandamos con width*/
     height: 768px;
   }
   .Logo {
-    padding-right: 100px;
+    padding-right: 0;
+    width: 60px;
   }
   .descubre {
     font-family: "Arizonia", cursive;
@@ -366,23 +353,31 @@ la agrandamos con width*/
     width: 680px;
     object-fit: contain;
   }
-  .iframeYT {
-    width: 684px;
+  iframe {
     height: 456px;
     border-radius: 10px;
-    margin: 0 auto;
   }
   .pMerida1 {
     flex-direction: column;
     align-items: center;
+    gap: 30px;
   }
   .introText {
     font-size: 18px;
   }
+  .footerStyle {
+    padding-top: 60px;
+    margin-top: 50px;
+  }
 }
 @media (max-width: 425px) {
+  header {
+    height: 425px;
+    /*probar con la propiedasd 100vh*/
+  }
   .Logo {
     padding: 0;
+    width: 50px;
   }
   .menu {
     flex-direction: row;
@@ -406,6 +401,9 @@ la agrandamos con width*/
     margin: 5px;
     width: 400px;
   }
+  .titulo {
+    justify-content: center;
+  }
   .descubre {
     font-size: 40px;
     margin: 5px;
@@ -424,10 +422,19 @@ la agrandamos con width*/
   .gridItemCanaima p {
     font-size: 12px;
   }
+  .gridContainerRoques p {
+    font-size: 12px;
+  }
   .gridContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
+  }
+  .gridContainerRoques {
+    padding: 0;
+    margin: 20px;
+    gap: 20px;
   }
   .gridItem {
     display: flex;
@@ -448,6 +455,7 @@ la agrandamos con width*/
     background-size: cover;
     padding: 0;
     margin: 0;
+    padding-top: 30px;
   }
   .footerStyle ul {
     padding-right: 0;
@@ -473,10 +481,22 @@ la agrandamos con width*/
     margin: 20px;
     row-gap: 20px;
   }
+  iframe {
+    height: 256px;
+  }
+  .pArticule {
+    margin: 0;
+  }
+  .imgArticule {
+    width: 100%;
+  }
 }
 @media (max-width: 375px) {
   .menu ul {
     width: 80%;
+  }
+  .pArticule {
+    margin: 0;
   }
 }
 @media (max-width: 320px) {
@@ -490,6 +510,21 @@ la agrandamos con width*/
     margin: 0;
     width: 100%;
     padding: 0;
+  }
+  .footerStyle {
+    padding-top: 30px;
+  }
+  .pArticule {
+    margin: 0;
+  }
+  .descubre {
+    font-size: 30px;
+  }
+  .mainTitle {
+    font-size: 40px;
+  }
+  .titulo {
+    margin: 20px;
   }
 }
 
