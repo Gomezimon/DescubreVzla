@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*utilities*/
+/*base*/
 @import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Asul:wght@700&family=Lato:wght@400;700;900&display=swap");
 * {
   font-family: "Lato", sans-serif;
@@ -14,33 +16,17 @@
   box-sizing: border-box;
 }
 
+/*layout*/
 .Logo {
   margin: 0;
   width: 80px;
-}
-
-.introText {
-  font-size: 20px;
-  margin-left: 84px;
-  margin-right: 84px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-h2 { /*estilo de fuentes en los h2 de los articulos*/
-  font-family: "Lato", sans-serif;
-  font-size: 25px;
-  font-weight: 900;
-  font-style: normal;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 .titulo {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /*Error, no se esta centrando*/ /*habia que declarar el height*/
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -63,6 +49,31 @@ h2 { /*estilo de fuentes en los h2 de los articulos*/
   padding-top: 0;
   margin-left: 30px;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.589);
+}
+
+.tituloRoques {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.introText {
+  font-size: 20px;
+  margin-right: 84px;
+  margin-left: 84px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h2 { /*estilo de fuentes en los h2 de los articulos*/
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  font-style: normal;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .gridContainer {
@@ -88,11 +99,6 @@ la agrandamos con width*/
   margin-bottom: 80px;
   border-bottom-right-radius: 50px;
   border-top-left-radius: 50px;
-}
-
-.imgArticuleRight {
-  width: 600px;
-  object-fit: contain;
 }
 
 .gridContainerCanaima {
@@ -152,15 +158,15 @@ la agrandamos con width*/
   flex-direction: row;
   justify-content: center;
   gap: 100px;
-  margin-left: 84px;
   margin-right: 84px;
+  margin-left: 84px;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
 .pMerida2 {
-  margin-left: 84px;
   margin-right: 84px;
+  margin-left: 84px;
 }
 
 .imgTeleferico {
@@ -179,14 +185,6 @@ iframe {
   border-radius: 50px;
   overflow: hidden;
   margin-bottom: 30px;
-}
-
-.tituloRoques {
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 .boat-container {
@@ -220,11 +218,6 @@ iframe {
   margin-right: 84px;
   margin-left: 84px;
   justify-content: center;
-}
-
-.carousel-caption h5 {
-  color: rgb(255, 255, 255);
-  text-shadow: 3px 3px 3px black;
 }
 
 .footerStyle {
@@ -266,6 +259,13 @@ iframe {
   width: 30px;
 }
 
+/*components*/
+.carousel-caption h5 {
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px black;
+}
+
+/*media queries*/
 @media (max-width: 1024px) {
   .gridContainer {
     grid-gap: 50px;

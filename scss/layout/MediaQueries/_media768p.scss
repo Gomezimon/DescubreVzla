@@ -1,0 +1,127 @@
+@media (max-width: 768px){
+    header{
+        height: 768px;
+    }
+    .introText {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0;
+    }
+    .titulo {
+        height: 450px;
+        justify-content: flex-end;
+        margin-left: 30px;
+    }
+    .imagenCentrada{
+        width: 684px;
+    }
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px 0 30px;
+        padding: 0;
+        .gridItem{
+            display: grid;
+            grid-template-columns: repeat(2, 327px);
+            grid-template-rows: 30px 100%;
+            align-items: end;
+            row-gap: 10px;
+            column-gap: 30px;
+            padding: 0;
+            margin-bottom: 30px;
+            grid-template-areas:
+            "h2Articule h2Articule"
+            "pArticule imgArticule"
+            ;
+            .imgArticule{
+                width: 325px;
+                padding-bottom: 25px;
+                grid-area: imgArticule;
+            }
+            .h2Articule{
+                grid-area: h2Articule;
+                text-align: left;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-top: 0;
+            }
+            .pArticule{
+                grid-area: pArticule;
+            }
+        }
+    }
+    .gridContainerCanaima {
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px 0 30px;
+        gap: 30px;
+    }
+    .gridContainerMorrocoy {
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px 0 30px;
+        gap: 30px;
+    }
+    .gridContainerRoques {
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px 0 30px;
+        gap: 30px;
+    }
+    .boat-container{
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 120px;
+        }
+    }
+    .Logo {
+        padding-right: 0;
+        width: 60px;
+    }
+    .descubre {
+        font-family: "Arizonia", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 60px;
+        padding-bottom: 0;
+    }
+    .mainTitle {
+        font-family: "Asul", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 65px;
+        padding-top: 0;
+        margin-left: 0;
+    }
+    .tituloRoques{
+        margin-right: 15px;
+        height: 80vh;
+    }
+    .imgArticuleRight {
+        display: flex;
+        align-items: center;
+        width: 680px;
+        object-fit: contain;
+    }
+    iframe {
+        height: 456px;
+        border-radius: 10px;
+    }
+    .pMerida1{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .introText{
+        font-size: 18px;
+    }
+    .footerStyle{
+        padding-top: 60px;
+        margin-top: 50px;
+    }
+    .nav-link{
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+    }
+}

@@ -1,0 +1,39 @@
+.Logo {
+    margin: 0;
+    width: 80px;
+}
+.titulo {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.descubre {
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: white;
+    padding-bottom: 0;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.589);
+
+}
+.mainTitle {
+    font-family: "Asul", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 65px;
+    color: white;
+    padding-top: 0;
+    margin-left: 30px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.589);
+}
+.tituloRoques {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}

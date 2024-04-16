@@ -1,0 +1,16 @@
+
+@mixin grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px; 
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 84px;
+    margin-left: 84px;
+    justify-content: center;
+}
+@mixin margin84 {
+    margin-right: 84px;
+    margin-left: 84px;
+}

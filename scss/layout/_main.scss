@@ -1,0 +1,139 @@
+.introText {
+    font-size: 20px;
+    @include margin84;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h2 { /*estilo de fuentes en los h2 de los articulos*/
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 10px;
+} 
+.gridContainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 44%); /* 2 columnas de igual ancho */
+    grid-gap: 100px; /* Espacio entre las celdas de la cuadrícula */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+    .gridItem {
+        .imgArticule {
+            width: 100%;
+        }
+    }
+}
+.imagenCentrada{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: contain; /*con object fit: contain podemos mantener la proporcion de la imagen mientras
+    la agrandamos con width*/
+    margin-bottom: 80px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+//*Canaima*//
+.gridContainerCanaima{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include margin84;
+    justify-content: center;
+}
+.text-focus-in {
+	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+//*Morrocoy*//
+.gridContainerMorrocoy {
+    @include grid2;
+}
+
+//*Merida*//
+.pMerida1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px ;
+    @include margin84;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.pMerida2{
+    @include margin84;
+}
+.imgTeleferico{
+    width: 600px;
+}
+.imgBusto {
+    width: 600px;
+}
+//*Los Roques*//
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 600px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.boat-container {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    img{
+        width: 150px;
+    }
+    animation: boat 3s linear infinite;
+}
+@keyframes boat{
+	0%{
+		transform: rotate(0);
+	}
+
+	50%{
+		transform: rotate(-1deg);
+	}
+
+	100%{
+		transform: rotate(0);
+	}
+}
+.gridContainerRoques {
+    @include grid2;
+
+}

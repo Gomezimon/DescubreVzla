@@ -1,0 +1,135 @@
+@media (max-width: 425px){
+    header {
+        height: 100vh;
+        /*probar con la propiedasd 100vh*/
+    }
+    .Logo {
+        width: 50px;
+    }
+    .titulo {
+        justify-content: center;
+    }
+    .descubre {
+        font-size: 40px;
+        margin: 5px;
+    }
+    .mainTitle {
+        font-size: 50px;
+        margin: 0;
+    }
+    .introText {
+        font-size: 12px;
+        margin: 20px;
+    }
+    .pArticule {
+        font-size: 12px;
+    }
+    .gridItemCanaima p {
+        font-size: 12px;
+    }
+    .gridContainerRoques p {
+        font-size: 12px;
+    }
+    .tituloRoques{
+        height: 70vh;
+    }
+    .boat-container {
+        width: 75%;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 100px;
+        }
+    }
+    .gridContainer{
+        display: flex;
+        .gridItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                .imgArticule{
+                    width: 100%;
+                }
+            .h2Articule{
+                padding: 0;
+            }
+            }
+        }
+    }
+    .gridContainerRoques {
+        padding: 0;
+        margin: 20px;
+        gap: 20px;
+    }
+    .gridContainerMorrocoy{
+        padding: 0;
+        margin: 0 30px 0 30px;
+        .gridItemMorrocoy {
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+    .pMerida1{
+        margin: 30px 30px 0 30px;
+        p{
+            font-size: 12px;
+        }
+    }
+    .pMerida2{
+        margin: 30px 30px 0 30px;
+        font-size: 12px;
+    }
+    .gridItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .h2Articule{
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+    .footerStyle {
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+        padding-top: 30px;
+    }
+    .footerStyle ul {
+        padding-right: 0;
+        gap: 10px;
+    }
+    .footerStyle ul li {
+        font-size: 12px;
+    }
+    .footerStyle ul li a{
+        font-size: 12px;
+    }
+    .instagramLogo {
+        width: 20px;
+    }
+    .facebookLogo {
+        width: 20px;
+    }
+    .imagenCentrada {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .gridContainerCanaima {
+        margin: 20px;
+        row-gap: 20px;
+    }
+    iframe{
+        height: 256px;
+    }
+    .pArticule {
+        margin: 0;
+    }
+    .imgArticule {
+        width: 100%;
+    }
+}
