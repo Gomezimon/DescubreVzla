@@ -1,3 +1,27 @@
+/*cambiar los background-image de las pages*/
+header {
+    background-size: cover;
+    background-position: center;
+    height: 1024px;
+    color: white;
+    padding-top: 0px;
+    margin: 0;
+}
+.header-index{
+    background-image: url(../../assets/img/playa-index.png);
+}
+.header-canaima{
+    background-image: url(../../assets/img/headerCanaima2.jpg);
+}
+.header-roques{
+    background-image: url(../../assets/img/headerLosRoquesboat.png);
+}
+.header-morrocoy{
+    background-image: url(../../assets/img/headerMorrocoy.png);
+}
+.header-pBolivar{
+    background-image: url(../../assets/img/headerPicobolivar.png);
+}
 .Logo {
     margin: 0;
     width: 80px;

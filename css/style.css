@@ -17,6 +17,36 @@
 }
 
 /*layout*/
+/*cambiar los background-image de las pages*/
+header {
+  background-size: cover;
+  background-position: center;
+  height: 1024px;
+  color: white;
+  padding-top: 0px;
+  margin: 0;
+}
+
+.header-index {
+  background-image: url(../../assets/img/playa-index.png);
+}
+
+.header-canaima {
+  background-image: url(../../assets/img/headerCanaima2.jpg);
+}
+
+.header-roques {
+  background-image: url(../../assets/img/headerLosRoquesboat.png);
+}
+
+.header-morrocoy {
+  background-image: url(../../assets/img/headerMorrocoy.png);
+}
+
+.header-pBolivar {
+  background-image: url(../../assets/img/headerPicobolivar.png);
+}
+
 .Logo {
   margin: 0;
   width: 80px;
@@ -153,35 +183,11 @@ la agrandamos con width*/
   justify-content: center;
 }
 
-.pMerida1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 100px;
-  margin-right: 84px;
-  margin-left: 84px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.pMerida2 {
-  margin-right: 84px;
-  margin-left: 84px;
-}
-
-.imgTeleferico {
-  width: 600px;
-}
-
-.imgBusto {
-  width: 600px;
-}
-
 iframe {
   display: block;
   margin: 0 auto;
   width: 90%;
-  height: 600px;
+  height: 700px;
   border-radius: 50px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -191,10 +197,12 @@ iframe {
   width: 70%;
   display: flex;
   justify-content: flex-end;
-  animation: boat 3s linear infinite;
 }
 .boat-container img {
   width: 150px;
+}
+.boat-container:hover {
+  animation: boat 4s linear infinite;
 }
 
 @keyframes boat {
@@ -218,6 +226,63 @@ iframe {
   margin-right: 84px;
   margin-left: 84px;
   justify-content: center;
+}
+
+/*Pico Bolivar*/
+.nube {
+  width: 200px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  margin: 16%;
+  filter: blur(35px);
+  -webkit-animation: slide-fwd-right 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fwd-right 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-fwd-right {
+  0% {
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px) translateX(100px);
+    transform: translateZ(160px) translateX(100px);
+  }
+}
+@keyframes slide-fwd-right {
+  0% {
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px) translateX(100px);
+    transform: translateZ(160px) translateX(100px);
+  }
+}
+.pMerida1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  margin-right: 84px;
+  margin-left: 84px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.pMerida2 {
+  margin-right: 84px;
+  margin-left: 84px;
+}
+
+.imgTeleferico {
+  width: 50%;
+}
+
+.imgBusto {
+  width: 50%;
 }
 
 .footerStyle {
@@ -273,10 +338,33 @@ iframe {
   .titulo {
     justify-content: flex-end;
   }
+  .iframe {
+    height: 600px;
+  }
+  .pMerida1 {
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  .pMerida1 .imgTeleferico {
+    width: 100%;
+  }
+  .pMerida1 .imgBusto {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   header {
     height: 768px;
+  }
+  .navbar[data-bs-theme=dark] {
+    background-color: rgba(59, 58, 58, 0.4196078431);
+  }
+  .navbar[data-bs-theme=light] {
+    background-color: rgba(218, 218, 218, 0.4862745098);
+  }
+  .Logo {
+    padding-right: 0;
+    width: 60px;
   }
   .introText {
     margin-left: 50px;
@@ -288,9 +376,28 @@ iframe {
     justify-content: flex-end;
     margin-left: 30px;
   }
+  .descubre {
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    padding-bottom: 0;
+  }
+  .mainTitle {
+    font-family: "Asul", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 65px;
+    padding-top: 0;
+    margin-left: 0;
+  }
+  .introText {
+    font-size: 18px;
+  }
   .imagenCentrada {
     width: 684px;
   }
+  /*index*/
   .gridContainer {
     display: flex;
     flex-direction: column;
@@ -323,18 +430,21 @@ iframe {
   .gridContainer .gridItem .pArticule {
     grid-area: pArticule;
   }
+  /*Canaima*/
   .gridContainerCanaima {
     display: flex;
     flex-direction: column;
-    margin: 0 30px 0 30px;
+    margin: 0 50px 0 50px;
     gap: 30px;
   }
+  /*Morrocoy*/
   .gridContainerMorrocoy {
     display: flex;
     flex-direction: column;
     margin: 0 30px 0 30px;
     gap: 30px;
   }
+  /*Los Roques*/
   .gridContainerRoques {
     display: flex;
     flex-direction: column;
@@ -348,54 +458,37 @@ iframe {
   }
   .boat-container img {
     width: 120px;
-  }
-  .Logo {
-    padding-right: 0;
-    width: 60px;
-  }
-  .descubre {
-    font-family: "Arizonia", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 60px;
-    padding-bottom: 0;
-  }
-  .mainTitle {
-    font-family: "Asul", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 65px;
-    padding-top: 0;
-    margin-left: 0;
+    display: none;
   }
   .tituloRoques {
     margin-right: 15px;
     height: 80vh;
   }
-  .imgArticuleRight {
-    display: flex;
-    align-items: center;
-    width: 680px;
-    object-fit: contain;
-  }
   iframe {
     height: 456px;
     border-radius: 10px;
   }
+  /*Pico Bolivar*/
   .pMerida1 {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
-  .introText {
-    font-size: 18px;
+  .pMerida1 .imgTeleferico {
+    width: 100%;
+  }
+  .pMerida1 .imgBusto {
+    width: 100%;
+  }
+  section .pMerida2 {
+    margin-right: 50px;
+    margin-left: 50px;
   }
   .footerStyle {
     padding-top: 60px;
     margin-top: 50px;
-  }
-  .nav-link {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
   }
 }
 @media (max-width: 425px) {
@@ -410,11 +503,11 @@ iframe {
     justify-content: center;
   }
   .descubre {
-    font-size: 40px;
+    font-size: 35px;
     margin: 5px;
   }
   .mainTitle {
-    font-size: 50px;
+    font-size: 45px;
     margin: 0;
   }
   .introText {
@@ -424,9 +517,15 @@ iframe {
   .pArticule {
     font-size: 12px;
   }
+  /*Canaima*/
   .gridItemCanaima p {
     font-size: 12px;
   }
+  .gridContainerCanaima {
+    margin: 20px;
+    row-gap: 20px;
+  }
+  /*Los Roques*/
   .gridContainerRoques p {
     font-size: 12px;
   }
@@ -440,6 +539,53 @@ iframe {
   }
   .boat-container img {
     width: 100px;
+    display: none;
+  }
+  .gridContainerRoques {
+    padding: 0;
+    margin: 20px;
+    gap: 20px;
+  }
+  iframe {
+    height: 256px;
+  }
+  /*Morrocoy*/
+  .gridContainerMorrocoy {
+    padding: 0;
+    margin: 0 20px 0 20px;
+  }
+  .gridContainerMorrocoy .gridItemMorrocoy p {
+    font-size: 12px;
+  }
+  /*Pico Bolivar*/
+  .pMerida1 {
+    margin: 20px 20px 0 20px;
+  }
+  .pMerida1 p {
+    font-size: 12px;
+  }
+  section .pMerida2 {
+    margin: 20px 20px 0 20px;
+    font-size: 12px;
+  }
+  .imgTeleferico {
+    width: 100%;
+  }
+  .imgBusto {
+    width: 100%;
+  }
+  /*index*/
+  .gridItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .h2Articule {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
   }
   .gridContainer {
     display: flex;
@@ -455,40 +601,17 @@ iframe {
   .gridContainer .gridItem a .h2Articule {
     padding: 0;
   }
-  .gridContainerRoques {
-    padding: 0;
-    margin: 20px;
-    gap: 20px;
+  .imagenCentrada {
+    width: 100%;
+    margin-bottom: 20px;
   }
-  .gridContainerMorrocoy {
-    padding: 0;
-    margin: 0 30px 0 30px;
-  }
-  .gridContainerMorrocoy .gridItemMorrocoy p {
-    font-size: 12px;
-  }
-  .pMerida1 {
-    margin: 30px 30px 0 30px;
-  }
-  .pMerida1 p {
-    font-size: 12px;
-  }
-  .pMerida2 {
-    margin: 30px 30px 0 30px;
-    font-size: 12px;
-  }
-  .gridItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .pArticule {
     margin: 0;
-    padding: 0;
   }
-  .h2Articule {
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
+  .imgArticule {
+    width: 100%;
   }
+  /*Footer*/
   .footerStyle {
     background-size: cover;
     padding: 0;
@@ -507,26 +630,11 @@ iframe {
   }
   .instagramLogo {
     width: 20px;
+    padding: 3px;
   }
   .facebookLogo {
     width: 20px;
-  }
-  .imagenCentrada {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .gridContainerCanaima {
-    margin: 20px;
-    row-gap: 20px;
-  }
-  iframe {
-    height: 256px;
-  }
-  .pArticule {
-    margin: 0;
-  }
-  .imgArticule {
-    width: 100%;
+    padding: 3px;
   }
 }
 @media (max-width: 375px) {
@@ -536,17 +644,25 @@ iframe {
   .pArticule {
     margin: 0;
   }
+  /*Pico Bolivar*/
+  .nube {
+    width: 100px;
+    height: 50px;
+    margin: 10%;
+  }
   .pMerida1 {
     margin: 20px;
   }
   .pMerida1 p {
     font-size: 12px;
   }
-  .pMerida2 {
-    margin: 20px;
-  }
-  .pMerida2 {
+  section .pMerida2 {
+    margin: 0 20px 0 20px;
     font-size: 12px;
+  }
+  /*Morrocoy*/
+  .gridContainerMorrocoy {
+    margin: 0 20px 0 20px;
   }
 }
 @media (max-width: 320px) {
@@ -567,6 +683,16 @@ iframe {
   }
   .titulo {
     margin: 20px;
+  }
+  /*Morrocoy*/
+  .gridContainerMorrocoy {
+    margin: 0 20px 0 20px;
+  }
+  /*Pico Bolivar*/
+  .nube {
+    width: 100px;
+    height: 50px;
+    margin: 10%;
   }
 }
 

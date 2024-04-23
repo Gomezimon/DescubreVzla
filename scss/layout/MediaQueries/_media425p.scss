@@ -10,11 +10,11 @@
         justify-content: center;
     }
     .descubre {
-        font-size: 40px;
+        font-size: 35px;
         margin: 5px;
     }
     .mainTitle {
-        font-size: 50px;
+        font-size: 45px;
         margin: 0;
     }
     .introText {
@@ -24,9 +24,15 @@
     .pArticule {
         font-size: 12px;
     }
+    /*Canaima*/
     .gridItemCanaima p {
         font-size: 12px;
     }
+    .gridContainerCanaima {
+        margin: 20px;
+        row-gap: 20px;
+    }
+    /*Los Roques*/
     .gridContainerRoques p {
         font-size: 12px;
     }
@@ -39,7 +45,60 @@
         justify-content: flex-end;
         img{
             width: 100px;
+            display: none;
         }
+    }
+    
+    .gridContainerRoques {
+        padding: 0;
+        margin: 20px;
+        gap: 20px;
+    }
+    iframe{
+        height: 256px;
+    }
+    /*Morrocoy*/
+    .gridContainerMorrocoy{
+        padding: 0;
+        margin: 0 20px 0 20px;
+        .gridItemMorrocoy {
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+    /*Pico Bolivar*/
+    .pMerida1{
+        margin: 20px 20px 0 20px;
+        p{
+            font-size: 12px;
+        }
+    }
+    section{
+        .pMerida2{
+            margin: 20px 20px 0 20px;
+            font-size: 12px;
+        }
+
+    }
+    .imgTeleferico{
+        width: 100%;
+    }
+    .imgBusto{
+        width: 100%;
+    }
+    /*index*/
+    .gridItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .h2Articule{
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
     }
     .gridContainer{
         display: flex;
@@ -57,79 +116,40 @@
             }
         }
     }
-    .gridContainerRoques {
-        padding: 0;
-        margin: 20px;
-        gap: 20px;
-    }
-    .gridContainerMorrocoy{
-        padding: 0;
-        margin: 0 30px 0 30px;
-        .gridItemMorrocoy {
-            p{
-                font-size: 12px;
-            }
-        }
-    }
-    .pMerida1{
-        margin: 30px 30px 0 30px;
-        p{
-            font-size: 12px;
-        }
-    }
-    .pMerida2{
-        margin: 30px 30px 0 30px;
-        font-size: 12px;
-    }
-    .gridItem {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
-    .h2Articule{
-        font-size: 18px;
-        margin: 0;
-        padding: 0;
-    }
-    .footerStyle {
-        background-size: cover;
-        padding: 0;
-        margin: 0;
-        padding-top: 30px;
-    }
-    .footerStyle ul {
-        padding-right: 0;
-        gap: 10px;
-    }
-    .footerStyle ul li {
-        font-size: 12px;
-    }
-    .footerStyle ul li a{
-        font-size: 12px;
-    }
-    .instagramLogo {
-        width: 20px;
-    }
-    .facebookLogo {
-        width: 20px;
-    }
+
     .imagenCentrada {
         width: 100%;
         margin-bottom: 20px;
-    }
-    .gridContainerCanaima {
-        margin: 20px;
-        row-gap: 20px;
-    }
-    iframe{
-        height: 256px;
     }
     .pArticule {
         margin: 0;
     }
     .imgArticule {
         width: 100%;
+    }
+    /*Footer*/
+    .footerStyle {
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+        padding-top: 30px;
+        ul{
+            padding-right: 0;
+            gap: 10px;
+            li{
+                font-size: 12px;
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .instagramLogo {
+        width: 20px;
+        padding: 3px;
+    }
+    .facebookLogo {
+        width: 20px;
+        padding: 3px;
     }
 }

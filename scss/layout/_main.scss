@@ -81,32 +81,12 @@ h2 { /*estilo de fuentes en los h2 de los articulos*/
 .gridContainerMorrocoy {
     @include grid2;
 }
-
-//*Merida*//
-.pMerida1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 100px ;
-    @include margin84;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-.pMerida2{
-    @include margin84;
-}
-.imgTeleferico{
-    width: 600px;
-}
-.imgBusto {
-    width: 600px;
-}
 //*Los Roques*//
 iframe {
     display: block;
     margin: 0 auto;
     width: 90%;
-    height: 600px;
+    height: 700px;
     border-radius: 50px;
     overflow: hidden;
     margin-bottom: 30px;
@@ -118,7 +98,9 @@ iframe {
     img{
         width: 150px;
     }
-    animation: boat 3s linear infinite;
+    &:hover{
+        animation: boat 4s linear infinite;
+    } 
 }
 @keyframes boat{
 	0%{
@@ -136,4 +118,55 @@ iframe {
 .gridContainerRoques {
     @include grid2;
 
+}
+/*Pico Bolivar*/
+.nube{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin: 16%;
+    filter: blur(35px);
+	-webkit-animation: slide-fwd-right 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-right 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-fwd-right {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) translateX(100px);
+              transform: translateZ(160px) translateX(100px);
+    }
+  }
+  @keyframes slide-fwd-right {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) translateX(100px);
+              transform: translateZ(160px) translateX(100px);
+    }
+  }
+  .pMerida1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px ;
+    @include margin84;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.pMerida2{
+    @include margin84;
+}
+.imgTeleferico{
+    width: 50%;
+}
+.imgBusto {
+    width: 50%;
 }

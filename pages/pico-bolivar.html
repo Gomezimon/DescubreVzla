@@ -6,23 +6,12 @@
     <meta name="description" content="¡Descubre la majestuosidad del Pico Bolívar en Mérida, Venezuela, y sumérgete en una experiencia única en los Andes venezolanos!">
     <meta name="keywords" content="Pico Bolívar, Mérida, Venezuela, Andes, trekking">
     <title>Pico Bólivar</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-            header {
-            background-image: url(../assets/img/headerPicobolivar.png);
-            background-size: cover;
-            background-position: center;
-            height: 1024px;
-            color: white;
-            text-align: right;
-            padding-top: 0px;
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
-    <header>
+    <header class="header-pBolivar">
         <div class="nav-container">
             <nav class="navbar navbar-expand-lg shadow" data-bs-theme="light">
                 <div class="container-fluid">
@@ -33,11 +22,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="../index.html">Inicio</a>
                     <a class="nav-link" href="../pages/canaima.html">Canaima</a>
                     <a class="nav-link" href="../pages/los-roques.html">Los Roques</a>
                     <a class="nav-link" href="../pages/morrocoy.html">Morrocoy</a>
-                    <a class="nav-link" href="#">Pico Bólivar</a>
+                    <a class="nav-link active" aria-current="page"  href="#">Pico Bólivar</a>
                     </div>
                 </div>
                 </div>
@@ -45,6 +34,7 @@
         </div>
         <div class="titulo">
             <h2 class="descubre">Descubre</h2>
+            <div class="nube"></div>
             <h1 class="mainTitle text-focus-in">El pico Bólivar</h1>
         </div>
     </header>
@@ -60,8 +50,8 @@
             Con su combinación de paisajes espectaculares, aventuras al aire libre y la hospitalidad de su gente, el Pico Bolívar 
             y la ciudad de Mérida te ofrecen una experiencia inolvidable en el corazón de los Andes venezolanos. ¡Ven y descubre 
             la belleza y la emoción que te esperan en Mérida!</p>
-        <div class="container">
-            <img src="../assets/img/telefericoMerida.png" class="imagenCentrada" alt="Teleferico de Merida">
+        <div data-aos="fade-down" class="container">
+            <img src="../assets/img/TelefericoMerida1.jpg" class="imagenCentrada" alt="Teleferico de Merida">
         </div>
         <div class="pMerida1">
             <p>El Teleférico de Mérida, conocido como el teleférico más alto y largo del mundo, ofrece una experiencia única que 
@@ -71,13 +61,18 @@
                 admirar la belleza de los Andes venezolanos, mientras se elevan sobre valles, ríos y picos nevados, ofreciendo una
                 perspectiva única de la región. El Teleférico de Mérida es una experiencia imperdible para quienes desean 
                 explorar la belleza natural de Venezuela desde las alturas.
+                El Teleférico de Mérida cuenta con diferentes tarifas según la categoría de los usuarios. La entrada general para adultos 
+                venezolanos tiene un precio de 20 USD, mientras que la entrada VIP, que incluye un cóctel para dos personas, tiene un costo 
+                de 50 USD. Los adultos mayores y niños venezolanos tienen una tarifa de 12 USD, y los niños menores de 3 años tienen entrada 
+                gratuita hasta la Estación Loma Redonda. En cuanto a los extranjeros, el boleto tiene un valor de 40 USD para disfrutar de este 
+                impresionante recorrido panorámico.
             </p>
             <img src="../assets/img/Teleferico2.jpg" class="imgTeleferico" alt="Turistas en el teleferico">
         </div>
         <div class="pMerida1">
             <p>El Pico Bolívar, con una altitud de 4.978 metros sobre el nivel del mar, es la cumbre más alta de 
-                Venezuela y uno de los picos más emblemáticos de los Andes venezolanos. Nombrado en honor al 
-                líder independentista Simón Bolívar, esta imponente montaña es un destino popular para los amantes
+                Venezuela y uno de los picos más emblemáticos de los Andes venezolanos. Esta ubicado en el Parque Nacional Sierra Nevada, en el estado Merida,
+                y lleva su nombre en honor al líder independentista Simón Bolívar, esta imponente montaña es un destino popular para los amantes
                 del trekking y la escalada. Desde su cima, los aventureros pueden disfrutar de vistas panorámicas
                 impresionantes de los páramos andinos y picos nevados que se extienden a lo lejos. El Pico 
                 Bolívar alberga una rica biodiversidad, con una variedad de especies vegetales y animales 
@@ -99,7 +94,7 @@
     <footer>
         <nav class="footerStyle">
             <ul>
-                <li>Contacto</li>
+                <li><a href="./contacto.html">Contacto</a></li>
                 <li>Nosotros</li>
                 <li>Copyright</li>
                 <li><a href="https://www.instagram.com/" target="_blank">
@@ -111,7 +106,11 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

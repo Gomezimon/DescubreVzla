@@ -5,4 +5,17 @@
     .titulo {
         justify-content: flex-end;
     }
+    .iframe{
+        height: 600px;
+    }
+    .pMerida1{
+        gap: 50px;
+        flex-wrap: wrap;
+        .imgTeleferico{
+            width: 100%;
+        }
+        .imgBusto{
+            width: 100%;
+        }
+    }
 }

@@ -6,23 +6,12 @@
     <meta name="description" content="¡Visita el encantador Parque Nacional Morrocoy en Venezuela! Disfruta de hermosas playas, cayos y actividades acuáticas.">
     <meta name="keywords" content="Morrocoy, Venezuela, parque nacional, playas, cayos">
     <title>Morrocoy</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-            header {
-            background-image: url(../assets/img/headerMorrocoy.png);
-            background-size: cover;
-            background-position: center;
-            height: 1024px;
-            color: white;
-            text-align: right;
-            padding-top: 0px;
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
-    <header>
+    <header class="header-morrocoy">
       <div class="nav-container">
         <nav class="navbar navbar-expand-lg shadow" data-bs-theme="dark">
             <div class="container-fluid">
@@ -33,10 +22,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link" href="../index.html">Inicio</a>
                 <a class="nav-link" href="../pages/canaima.html">Canaima</a>
                 <a class="nav-link" href="../pages/los-roques.html">Los Roques</a>
-                <a class="nav-link" href="#">Morrocoy</a>
+                <a class="nav-link active" aria-current="page"  href="#">Morrocoy</a>
                 <a class="nav-link" href="../pages/pico-bolivar.html">Pico Bólivar</a>
                 </div>
             </div>
@@ -57,7 +46,7 @@
             parque, y observa la fascinante vida marina que habita en estas aguas. Con sus impresionantes paisajes y actividades 
             emocionantes, el Parque Nacional Morrocoy es el destino perfecto para los amantes del mar y la naturaleza. ¡Ven y 
             descubre la belleza de Morrocoy en Venezuela!</p>
-        <div class="container">
+        <div data-aos="fade-down" class="container">
             <img src="../assets/img/encabezadoMorrocoy2.png" class="imagenCentrada" alt="Playa en Morrocoy">
         </div>
         <div class="gridContainerMorrocoy">
@@ -69,6 +58,10 @@
                         un mundo submarino lleno de vida y color. Los arrecifes albergan una gran diversidad de peces tropicales, así 
                         como corales y otras criaturas marinas, creando un escenario ideal para explorar y maravillarse con la belleza del 
                         océano.
+                        <br>
+                        <br>
+                        El parque nacional Morrocoy cuenta con un amplio rango de posibilidades ambientales y de paisajes naturales; unido a extraordinarios 
+                        escenarios paisajísticos que caracterizan a cada uno de los lugares que conforman al parque, ricos en biodiversidad y belleza. En el habitan además numerosos reptiles marinos, entre los que se destacan las tortugas marinas como la tortuga verde, la tortuga carey, la tortuga cardón, la tortuga cabezón así como el caimán de la costa, todas ellas consideradas en peligro de extinción
                     </p>
             </article>
             <articule id="carouselExampleCaptions" class="carousel slide">
@@ -79,19 +72,19 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../assets/img/slideMorrocoy1.png" class="d-block w-100" alt="...">
+                    <img src="../assets/img/slideMorrocoy1.png" class="d-block w-100" alt="Tortuga Carey nadando en un arrecife en Morrocoy">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Tortuga Carey</h5>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="../assets/img/slideMorrocoy2.png" class="d-block w-100" alt="...">
+                    <img src="../assets/img/slideMorrocoy2.png" class="d-block w-100" alt="Dos aves Corocora posando en una rama">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Ave Corocora</h5>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="../assets/img/slideMorrocoy3.png" class="d-block w-100" alt="...">
+                    <img src="../assets/img/slideMorrocoy3.png" class="d-block w-100" alt="Turistas disfrutando de la playa, en lanchas y sombrillas en la orilla">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Playa en Morrocoy</h5>
                     </div>
@@ -111,7 +104,7 @@
     <footer>
         <nav class="footerStyle">
             <ul>
-                <li>Contacto</li>
+                <li><a href="./contacto.html">Contacto</a></li>
                 <li>Nosotros</li>
                 <li>Copyright</li>
                 <li><a href="https://www.instagram.com/" target="_blank">
@@ -123,7 +116,11 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-</body>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

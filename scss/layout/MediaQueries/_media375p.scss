@@ -5,16 +5,26 @@
     .pArticule {
         margin: 0;
     }
+    /*Pico Bolivar*/
+    .nube{
+        width: 100px;
+        height: 50px;
+        margin: 10%;
+    }
     .pMerida1 {
         margin: 20px;
     }
     .pMerida1 p {
         font-size: 12px;
     }
-    .pMerida2 {
-        margin: 20px;
+    section{
+        .pMerida2{
+            margin: 0 20px 0 20px;
+            font-size: 12px;
+        }
     }
-    .pMerida2 {
-        font-size: 12px;
+    /*Morrocoy*/
+    .gridContainerMorrocoy{
+        margin: 0 20px 0 20px;
     }
 }
